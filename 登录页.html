@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>登录页</title>
+	<script type="text/javascript" src="js.js"></script>
+	<style type="text/css">
+	body{
+		padding: 0px;
+		margin: 0;
+
+	}
+		.top{
+
+			width: 1225px;
+			height: 80px;
+			position: fixed;
+		   background-color: #242424;
+		}
+		.top img{
+			width:170px ;
+			height:70px;
+			margin: 5px 0px 0px 50px;
+		}
+		.top ul{
+			position: fixed;
+		    top: -8px;
+		    left: 220px;
+		}
+		.top li{
+			width: 90px;
+			height: 80px;
+			color: white;
+			float: left;
+			text-align: center;
+			 line-height:80px;
+			background-color:#242424;
+			list-style-type: none;
+			
+		}
+		.top li:hover{background-color: #000;}
+		.top span{
+			width: 90px;
+			height: 35px;
+			border:0.5px solid #000;
+			border-radius: 10px;
+			position: fixed;
+			margin:25px 0 0 750px;
+			text-align: center;
+			line-height: 35px;
+			color: #ccc;
+		}
+		.top span:hover{
+			background-color: white;
+		}
+		.denglu{color:#ccc;
+		    width: 90px;
+			height: 35px;
+			text-decoration: none;
+			border-radius: 10px;
+			position: fixed;
+			margin:25px 0 0 850px;
+			text-align: center;
+			line-height: 35px; }
+			.denglu:hover{background-color: white;}
+		.top2{
+			width: 1225px;
+			height: 40px;
+			position: fixed;
+			margin-top: 80px;
+		   background-color: #C20C0C;
+		}
+		.top2 ul{
+			position: fixed;
+		    top: 80px;
+		    left: 250px;
+		}
+		.top2 li{
+			width: 50px;
+			height: 20px;
+			color: white;
+			font-size: 12px;
+			float: left;
+			text-align: center;
+			 line-height:20px;
+			border-radius: 40px;
+			list-style-type: none;
+			margin: 0px 40px 0px 0;
+			
+		}
+		.top2 li:hover{background-color: #9B0909;}
+		.txt{border:none;
+			background-color: white;
+		   border-radius: 10px;
+		   height: 35px;
+		   width: 130px;
+		   position: fixed;
+		    outline:medium;
+		   margin:25px 0 0 600px;
+		}
+		#form{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    border:1px solid #242424;
+    z-index: 2;
+    margin: 140px 0px 0px 350px;
+}
+#title{
+    margin: 0px 0px 60px 0px;
+    font-size: 25px;
+    color:  #333333;
+    width: 500px;
+    height: 100px;
+}
+.denglu-2 label{font-size: 20px ;color: #333333 ; margin:40px 0px 10px 100px;}
+.forget-2{
+		margin: 30px 0px 0px 210px;
+		font-size: 12px;
+	}
+	#sub{
+		width: 150px;
+		height: 40px;
+		background-color: #C20C0C;
+		border:none;
+		font-style: white;
+		margin: 20px 160px;
+		border-radius: 5px
+	}
+	.id-2{
+		width: 180px;
+		height: 30px;
+		border-radius: 5px;
+		border:0.5px solid;
+		margin: 0 0 0 10px;
+	}
+.p-2{
+		text-align: center;
+		line-height: 80px;
+		width: 246px;
+		height: 100px;
+		float: left;
+		border-radius:5px;
+		
+			}
+	#p-2:hover{
+		color:#C20C0C;	
+	}
+	.p-3{
+		text-align: center;
+		line-height: 80px;
+		width: 250px;
+		height: 100px;
+		float: left;
+		border-radius: 5px;
+		border-left:  2px solid #C20C0C;
+		border-bottom: 2px solid #C20C0C;
+		
+			}
+	#p-3:hover{
+		color:#C20C0C;		
+	}
+	.p-5{border-bottom: 1px solid #C20C0C;}
+	#form2{
+		width: 450px;
+        height: 200px;
+        position: absolute;
+        z-index: 1;
+        display: none;
+        margin: 270px 0px 0px 370px;
+		padding: 0px;
+		border:none;
+		
+	}
+	a {
+    color: #C20C0C;
+    text-decoration: none;
+}
+		</style>
+
+</head>
+<body>
+  <div class="top">
+    	<img src="img\网.png" >
+    	<ul class="ul">
+    		<li>发现音乐</li>
+    		<li>我的音乐</li>
+    		<li>朋友</li>
+            <li>商城</li>
+            <li>音乐人</li>
+    		<li>下载客户端</li>
+    	</ul>
+    	<input type="text" id="srch" class="txt j-flag" placeholder="音乐\视频\电台\用户">
+    	<span >视频投稿</span>
+    	<a href="" class="denglu">登录</a>
+    </div>
+    <div class="top2">
+    	<ul class="ul">
+    		<li>推荐</li>
+    		<li>排行榜</li>
+    		<li>歌单</li>
+            <li>主播</li>
+            <li>电台</li>
+    		<li>新碟上架</li>
+    	</ul>
+    </div>
+    <form action="set.php" method="POST" name="login1" id ="form">
+	<div id ="title">
+	<div><label id ="p-2" class="p-2">账号密码登录</label></div>
+    <div><label id ="p-3" class="p-3">注册</label></div>
+</div>
+	<div id="form1"><p class="denglu-2"><label>邮箱:</label><input type="text" class="id id-2" name="email2" id="email2"></p>
+	<p class="denglu-2"><label>密码:</label><input type="password" class="id id-2" name="password2" id="password2"></p>
+	<p class="forget forget-2"> <a href="#">忘记密码？</a></p>
+	<input type="submit" name="submit" value="登录" id="sub"></p>
+	</div>
+</form>
+<form action="connect.php" method="POST" name="login1" id="form2">
+	<p class="denglu-2"><label>邮箱:</label>&nbsp; &nbsp; <input type="text" class="id id-2" name="email" id="email"></p>
+	<p class="denglu-2"><label>密码:</label>&nbsp; &nbsp; <input type="password" class="id id-2" name="password" id="password" ></p>
+	<p class="denglu-2"><label>用户名:</label><input type="text" class="id id-2" name="name" id="name"></p>
+	<p class="forget forget-2">&nbsp;  <a href="#">忘记密码？</a></p>
+	<input type="submit" name="submit" value="注册" id="sub"></p>	
+
+</form>
+</body>
+</html>

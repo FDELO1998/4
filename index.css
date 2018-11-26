@@ -1,0 +1,176 @@
+body{
+		padding: 0;
+		margin: 0;
+	}
+		.top{
+
+			width: 1225px;
+			height: 80px;
+			position: fixed;
+		   background-color: #242424;
+		}
+		.top img{
+			width:170px ;
+			height:70px;
+			margin: 5px 0px 0px 50px;
+		}
+		.top ul{
+			position: fixed;
+		    top: -8px;
+		    left: 220px;
+		}
+		.top li{
+			width: 90px;
+			height: 80px;
+			color: white;
+			float: left;
+			text-align: center;
+			 line-height:80px;
+			background-color:#242424;
+			list-style-type: none;
+			
+		}
+		.top li:hover{background-color: #000;}
+		.top span{
+			width: 90px;
+			height: 35px;
+			border:0.5px solid #000;
+			border-radius: 10px;
+			position: fixed;
+			margin:25px 0 0 750px;
+			text-align: center;
+			line-height: 35px;
+			color: #ccc;
+		}
+		.top span:hover{
+			background-color: white;
+		}
+		.denglu{color:#ccc;
+		    width: 90px;
+			height: 35px;
+			text-decoration: none;
+			border-radius: 10px;
+			position: fixed;
+			margin:25px 0 0 850px;
+			text-align: center;
+			line-height: 35px; }
+			.denglu:hover{background-color: white;}
+		.top2{
+			width: 1225px;
+			height: 40px;
+			position: fixed;
+			margin-top: 80px;
+		   background-color: #C20C0C;
+		}
+		.top2 ul{
+			position: fixed;
+		    top: 80px;
+		    left: 250px;
+		}
+		.top2 li{
+			width: 50px;
+			height: 20px;
+			color: white;
+			font-size: 12px;
+			float: left;
+			text-align: center;
+			 line-height:20px;
+			border-radius: 40px;
+			list-style-type: none;
+			margin: 0px 40px 0px 0;
+			
+		}
+		.top2 li:hover{background-color: #9B0909;}
+		.txt{border:none;
+			background-color: white;
+		   border-radius: 10px;
+		   height: 35px;
+		   width: 130px;
+		   position: fixed;
+		    outline:medium;
+		   margin:25px 0 0 600px;
+		}
+		#photobg{
+			width: 1225px;
+		height: 300px;
+		
+		background-color: #333;
+		z-index: -2;
+		margin: 120px 0 0 0px;
+		position: absolute;
+		}
+		#photo{
+        margin: 0px 0 0 200px;
+		width: 900px;
+		height: 300px;
+		overflow: hidden;
+		position: absolute;
+		
+	}
+	#list{
+		width: 6300px;
+		height: 300px;
+		position: absolute;
+		z-index: -1;
+	}
+	#list img{
+		float: left;
+		width: 900px;
+		height: 300px
+	}
+	#buttons{
+		position: absolute;
+		height: 10px;
+		width: 100px;
+		z-index: 2;
+		bottom: 20px;
+		left: 400px;
+
+	}
+	#buttons span{
+		cursor: pointer;
+		float: left;
+		border: 1px solid #fff;
+		width: 10px;
+		height: 10px;border-radius: 50%;
+		background: #333; margin-right: 5px;
+	}
+	#buttons  .on{
+		background: pink;
+	}
+	.arrow{
+		cursor: pointer;
+		display: none;
+		line-height: 39px;
+		text-align: center;
+		font-size: 36px;
+		font-weight: bold;
+		width: 40px; height: 40px;  
+		position: absolute;
+		 z-index: -1; top: 100px;
+		  background-color: black; 
+		  color: #fff;
+	}
+	.arrow:hover { background-color: RGBA(0,0,0,.7);}
+	 #photo:hover .arrow { display: block;}
+	 #prev { left: 20px;}
+        #next { right: 20px;}
+        .middle{
+	width: 1200px;
+	padding: 0 20px;
+	position: absolute;
+	top :450px;
+	z-index: -1;
+}
+       .middle2{
+	width: 1200px;
+	padding: 0 20px;
+	position: absolute;
+	top :730px;
+	z-index: -1;
+	
+}
+.middle-1{
+	float: left;
+	margin: 0px 25px 0px 0px;
+}
