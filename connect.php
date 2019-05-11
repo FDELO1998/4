@@ -14,5 +14,5 @@ $name=$_POST['name'];//获得表单提交的内容
  }else{
  	 echo "Error: " . $sql . "<br>" . $conn->error;
  }
- $con->close();
+ $con->close();//123456
 ?>
